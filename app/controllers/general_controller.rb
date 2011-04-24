@@ -16,4 +16,20 @@ class GeneralController < ApplicationController
     @title = "Contact"
   end
 
+  def order
+    @title = "Order"
+  end
+
+  def anniversary
+    @title = "Anniversary"
+  end
+
+  def occasion
+    @title = "Occasion"
+  end
+
+  def order
+    @title = "Order"
+  end
+
 end

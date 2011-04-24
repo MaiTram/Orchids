@@ -4,9 +4,9 @@
 
 
 <div class="main_menu">
-  <a href="#">any occasion</a><br />
+  <%= link_to 'any occasion', {:controller => "general", :action => 'occasion'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'occasion'}" %><br />
   <a href="#">birthday</a><br />
-  <a href="#">anniversary</a><br />
+  <%= link_to 'anniversary', {:controller => "general", :action => 'anniversary'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'anniversary'}" %><br />
   <a href="#">congratulations</a><br />
   <a href="#">valentine</a><br />
   <a href="#">woman day</a><br />
