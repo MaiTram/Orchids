@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Minh Thu Orchids - <%= @title %></title>
+
+    <%= javascript_include_tag 'jquery/jquery-1.4.2.min' %>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="top">
+        <%#= render :partial => "/layouts/main_menu" %>
+      </div>
+
+      <div id="body_container">
+        <%#= render :partial => "/layouts/flash", :object => flash %>
+
+        <%= yield %>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="footer">
+        <%#= render :partial => "/layouts/user_menu" %>
+      </div>
+
+      <div id="bottom">Copyright 2011 Minh Thu Orchids</div>
+    </div>
+
+  </body>
+</html>

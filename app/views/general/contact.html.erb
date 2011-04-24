@@ -1,0 +1,26 @@
+<div id="<%= content_id = 'contact_content' %>" <%= display_click_to_edit_link(content_id) if @admin || @super_admin %>>
+  <%= display_div_content(content_id) %>
+</div>
+
+<div class="wide noleftcol">
+
+  <% form_for :feedback, @feedback, :url => {:controller => :general, :action => :submit_contact_form}, :html => {:class => "contact-form"} do |f| %>
+    <h3>CONTACT FORM</h3>
+    <p>
+      <%= f.label :email, 'Email' %>
+      <%= f.text_field :email, :id => "email", :class => "required email" %>
+
+      <%= f.label :subject, 'Subject', :class => "m-top20" %>
+      <%= f.text_field :subject, :id => "subject", :class => "required" %>
+    </p>
+
+    <p>
+      <%= f.label :content, 'Content' %>
+      <%= f.text_area :content, :id =>"content", :rows => 7, :class => "required" %>
+    </p>
+    <span class="clear"></span>
+    <%= f.submit 'Submit', :class => "btn big btn-red ffmedium submit" %>
+
+    <span class="clear"></span>
+  <% end %>
+
