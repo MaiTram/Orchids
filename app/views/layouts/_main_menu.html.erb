@@ -1,0 +1,22 @@
+<div class="logo">
+  Logo Here
+</div>
+
+
+<div class="main_menu">
+  <a href="#">any occasion</a><br />
+  <a href="#">birthday</a><br />
+  <a href="#">anniversary</a><br />
+  <a href="#">congratulations</a><br />
+  <a href="#">valentine</a><br />
+  <a href="#">woman day</a><br />
+  <a href="#">for small office</a><br />
+  <br />
+  <a href="#">orchids</a><br />
+</div>
+
+<div class="info">
+  <%= link_to 'order', {:controller => "general", :action => 'order'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'order'}" %><br />
+  <%= link_to 'delivery', {:controller => "general", :action => 'delivery'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'delivery'}" %><br />
+  <%= link_to 'contact', {:controller => "general", :action => 'contact'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'contact'}" %>
+</div>

@@ -1,26 +1,25 @@
-<div id="<%= content_id = 'contact_content' %>" <%= display_click_to_edit_link(content_id) if @admin || @super_admin %>>
-  <%= display_div_content(content_id) %>
+<div id="contact_content">
+  <p>
+    If you have any other requirements or want to give us some feedbacks, please feel free to contact us via the <span style="font-style: italic;">following email:</span><br />
+    minhthuorchids@gmail.com<br />
+    vomaitram@gmail.com
+  </p>
+  <br />
+  <p>
+    <span style="font-style: italic;">or by phone:</span><br />
+    0904 900 998 - Ms Thu (if you speak Vietnamese)<br />
+    012 6709 8898 - Ms Tram (if you speak English)
+  </p>
+  <br />
+  <p>
+    If you would like to visit our orchids garden, we are more than happy to guide you around.
+  </p>
+  <br />
+  <p>
+    <span style="font-weight: bold; font-size: 14px;">Orchids Garden</span><br />
+    45/4/17A Nguyen Don Tiet St<br />
+    Binh Trung Dong Ward, District 2<br />
+    Ho Chi Minh City, Vietnam
+  </p>
+
 </div>
-
-<div class="wide noleftcol">
-
-  <% form_for :feedback, @feedback, :url => {:controller => :general, :action => :submit_contact_form}, :html => {:class => "contact-form"} do |f| %>
-    <h3>CONTACT FORM</h3>
-    <p>
-      <%= f.label :email, 'Email' %>
-      <%= f.text_field :email, :id => "email", :class => "required email" %>
-
-      <%= f.label :subject, 'Subject', :class => "m-top20" %>
-      <%= f.text_field :subject, :id => "subject", :class => "required" %>
-    </p>
-
-    <p>
-      <%= f.label :content, 'Content' %>
-      <%= f.text_area :content, :id =>"content", :rows => 7, :class => "required" %>
-    </p>
-    <span class="clear"></span>
-    <%= f.submit 'Submit', :class => "btn big btn-red ffmedium submit" %>
-
-    <span class="clear"></span>
-  <% end %>
-

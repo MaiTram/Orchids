@@ -8,8 +8,8 @@ class GeneralController < ApplicationController
     @title = "Home"
   end
 
-  def aboutus
-    @title = "About Us"
+  def delivery
+    @title = "Delivery"
   end
 
   def contact
