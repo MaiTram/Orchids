@@ -125,5 +125,8 @@ html, body {
     margin-left: 10px;
 }
 
-
+.thumb_div {
+    width: 220px;
+    height: 220px;
+}
 
