@@ -2,15 +2,14 @@
   Logo Here
 </div>
 
-
 <div class="main_menu">
   <%= link_to 'any occasion', {:controller => "general", :action => 'occasion'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'occasion'}" %><br />
-  <a href="#">birthday</a><br />
+  <%= link_to 'birthday', {:controller => "general", :action => 'birthday'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'birthday'}" %><br />
   <%= link_to 'anniversary', {:controller => "general", :action => 'anniversary'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'anniversary'}" %><br />
-  <a href="#">congratulations</a><br />
-  <a href="#">valentine</a><br />
-  <a href="#">woman day</a><br />
-  <a href="#">for small office</a><br />
+  <%= link_to 'congratulations', {:controller => "general", :action => 'congratulations'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'congratulations'}" %><br />
+  <%= link_to 'valentine', {:controller => "general", :action => 'valentine'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'valentine'}" %><br />
+  <%= link_to 'woman day', {:controller => "general", :action => 'woman_day'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'woman_day'}" %><br />
+  <%= link_to 'for small office', {:controller => "general", :action => 'small_office'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'small_office'}" %><br />
   <br />
   <a href="#">orchids</a><br />
 </div>

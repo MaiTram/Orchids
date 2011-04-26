@@ -206,6 +206,7 @@
 	background-image: url('fancybox-x.png');
 	background-position: 0px -40px;
 	color: #FFF;
+        text-transform: uppercase;
 }
 
 #fancybox-title-right {

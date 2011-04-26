@@ -1,11 +1,7 @@
 class GeneralController < ApplicationController
 
   def index
-    redirect_to :action => :home
-  end
-
-  def home
-    @title = "Home"
+    redirect_to :action => :occasion
   end
 
   def delivery
@@ -28,8 +24,24 @@ class GeneralController < ApplicationController
     @title = "Occasion"
   end
 
-  def order
-    @title = "Order"
+  def woman_day
+    @title = "Woman day 8/3"
+  end
+
+  def congratulations
+    @title = "Congratulations"
+  end
+
+  def birthday
+    @title = "Birthday"
+  end
+
+  def small_office
+    @title = "For Small Office"
+  end
+
+  def valentine
+    @title = "Valentine"
   end
 
 end
