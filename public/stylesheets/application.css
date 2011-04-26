@@ -81,8 +81,6 @@ html, body {
 
 #delivery_content {
     padding-top: 220px;
-    background: url('../images/delivery_bg.png') no-repeat bottom right;
-    min-height: 400px;
 }
 
 #order_content {
