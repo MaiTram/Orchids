@@ -74,17 +74,18 @@ html, body {
 
 #contact_content {
     padding-top: 220px;
-    background: url('../images/canh-lan.png') no-repeat top left;
+    background: url('../images/contact_bg.png') no-repeat top right;
 }
 
 #delivery_content {
     padding-top: 220px;
-    background: url('../images/DSC_0099.png') no-repeat bottom right;
+    background: url('../images/delivery_bg.png') no-repeat bottom right;
+    min-height: 400px;
 }
 
 #order_content {
     padding-top: 220px;
-    background: url('../images/DSC_0049.png') no-repeat top right;
+    background: url('../images/order_bg.png') no-repeat top right;
 }
 
 #contact_content p, #delivery_content p, #order_content p {
