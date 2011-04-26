@@ -35,7 +35,7 @@ html, body {
 
 .logo {
     width: 220px;
-    height: 220px;
+    margin-bottom: 20px;
 }
 
 .main_menu {
@@ -57,7 +57,7 @@ html, body {
 
 #left a {
     text-transform: lowercase;
-    line-height:18px;
+    line-height: 18px;
     font-size: 12px;
     text-decoration: none;
     color: #545454;

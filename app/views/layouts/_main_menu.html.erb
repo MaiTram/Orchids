@@ -1,21 +1,30 @@
 <div class="logo">
-  Logo Here
+  <%= image_tag '/images/logo.png', :width => '220px' %>
 </div>
 
 <div class="main_menu">
   <%= link_to 'any occasion', {:controller => "general", :action => 'occasion'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'occasion'}" %><br />
+  <br />
   <%= link_to 'birthday', {:controller => "general", :action => 'birthday'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'birthday'}" %><br />
+  <br />
   <%= link_to 'anniversary', {:controller => "general", :action => 'anniversary'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'anniversary'}" %><br />
+  <br />
   <%= link_to 'congratulations', {:controller => "general", :action => 'congratulations'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'congratulations'}" %><br />
+  <br />
   <%= link_to 'valentine', {:controller => "general", :action => 'valentine'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'valentine'}" %><br />
+  <br />
   <%= link_to 'woman day', {:controller => "general", :action => 'woman_day'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'woman_day'}" %><br />
+  <br />
   <%= link_to 'for small office', {:controller => "general", :action => 'small_office'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'small_office'}" %><br />
+  <br />
   <br />
   <a href="#">orchids</a><br />
 </div>
 
 <div class="info">
   <%= link_to 'order', {:controller => "general", :action => 'order'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'order'}" %><br />
+  <br />
   <%= link_to 'delivery', {:controller => "general", :action => 'delivery'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'delivery'}" %><br />
+  <br />
   <%= link_to 'contact', {:controller => "general", :action => 'contact'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'contact'}" %>
 </div>
