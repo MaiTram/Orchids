@@ -44,4 +44,8 @@ class GeneralController < ApplicationController
     @title = "Valentine"
   end
 
+  def orchids
+    @title = "Orchids"
+  end
+
 end

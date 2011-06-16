@@ -11,7 +11,7 @@
   <%= link_to 'woman day', {:controller => "general", :action => 'woman_day'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'woman_day'}" %><br />
   <%= link_to 'for small office', {:controller => "general", :action => 'small_office'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'small_office'}" %><br />
   <br />
-  <a href="#">orchids</a>
+  <%= link_to 'orchids', {:controller => "general", :action => 'orchids'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'orchids'}" %><br />
 </div>
 
 <div class="info">

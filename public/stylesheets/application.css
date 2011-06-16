@@ -12,7 +12,7 @@ html, body {
     background: #FFFFFF;
     margin-top: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 #left {
@@ -72,26 +72,43 @@ html, body {
 
 .clear {
     clear: both;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
 }
 
-#contact_content {
-    padding-top: 220px;
+#contact_content, #delivery_content, #order_content {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    min-height: 300px;
     background: url('../images/contact_bg.png') no-repeat top right;
 }
 
-#delivery_content {
-    padding-top: 220px;
-}
-
-#order_content {
-    padding-top: 220px;
-    background: url('../images/order_bg.png') no-repeat top right;
+#orchids_content {
+    padding-top: 200px;
+    padding-bottom: 50px;
+    min-height: 300px;
+    background: url('../images/orchids_bg.png') no-repeat top right;
 }
 
 #contact_content p, #delivery_content p, #order_content p {
+    width: 320px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+#orchids_content p {
     width: 480px;
     font-size: 12px;
     line-height: 25px;
+}
+
+#orchids_content h1 {
+    width: 480px;
+    font-size: 32px;
+    line-height: 32px;
+    color: fuchsia;
 }
 
 #delivery_content ul {
@@ -115,6 +132,8 @@ html, body {
     text-decoration: none;
     color: #545454;
     background: url('../images/transparent.png') repeat;
+    display: inline;
+    position: relative;
 }
 
 .image_1st, .image_2nd {
