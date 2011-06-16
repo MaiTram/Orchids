@@ -1,8 +1,9 @@
 <div class="logo">
-  <%= image_tag '/images/logo.png', :width => '220px' %>
+<%= link_to image_tag('/images/logo.png', :width => '220px'), {:controller => "general", :action => 'intro'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'intro'}" %><br />
 </div>
 
 <div class="main_menu">
+  <%= link_to 'intro', {:controller => "general", :action => 'intro'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'intro'}" %><br />
   <%= link_to 'any occasion', {:controller => "general", :action => 'occasion'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'occasion'}" %><br />
   <%= link_to 'birthday', {:controller => "general", :action => 'birthday'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'birthday'}" %><br />
   <%= link_to 'anniversary', {:controller => "general", :action => 'anniversary'}, :class => "#{'left_selected' if @controller.controller_name == 'general' && @controller.action_name == 'anniversary'}" %><br />

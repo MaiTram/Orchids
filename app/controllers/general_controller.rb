@@ -1,7 +1,11 @@
 class GeneralController < ApplicationController
 
   def index
-    redirect_to :action => :occasion
+    redirect_to :action => :intro
+  end
+
+  def intro
+    @title = "intro"
   end
 
   def delivery

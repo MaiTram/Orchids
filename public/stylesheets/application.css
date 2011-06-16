@@ -108,7 +108,7 @@ html, body {
     width: 480px;
     font-size: 32px;
     line-height: 32px;
-    color: fuchsia;
+    color: #812D7B;
 }
 
 #delivery_content ul {
@@ -149,3 +149,21 @@ html, body {
     height: 220px;
 }
 
+.coming_soon {
+    width: 720px;
+    margin-top: 150px;
+}
+
+.coming_soon h1 {
+    width: 240px;
+    float: left;
+    color: #DDD;
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.coming_soon img {
+    float: left;
+    width: 460px;
+    margin-left: 20px;
+}
