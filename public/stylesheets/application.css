@@ -32,6 +32,7 @@ html, body {
 }
 
 #bottom {
+    margin-top: 10px;
     text-align: center;
     font-size: 12px;
 }
@@ -167,4 +168,16 @@ html, body {
     float: left;
     width: 460px;
     margin-left: 20px;
+}
+
+#intro-slider img {
+    width: 700px;
+    height: 525px;
+}
+
+#intro-banner {
+    color: #812D7B;
+    position: absolute;
+    left: 900px;
+    top: 400px;
 }
