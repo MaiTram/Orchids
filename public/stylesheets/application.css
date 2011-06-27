@@ -175,11 +175,12 @@ html, body {
     height: 525px;
 }
 
-#intro-banner a {
+a.intro_banner {
     color: #812D7B;
     position: absolute;
     left: 900px;
     top: 430px;
     text-decoration: none;
     font-size: 18px;
+    z-index: 999;
 }
