@@ -6,6 +6,7 @@ class GeneralController < ApplicationController
 
   def intro
     @title = "intro"
+    render :layout => "intro"
   end
 
   def delivery
