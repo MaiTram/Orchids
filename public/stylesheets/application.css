@@ -84,8 +84,7 @@ html, body {
     padding-top: 150px;
     margin-right: -10px;
     margin-bottom: -50px;
-    padding-bottom: 30px;
-    min-height: 350px;
+    height: 450px;
     background: url('../images/contact_bg.png') no-repeat top right;
 }
 
@@ -181,8 +180,8 @@ html, body {
 a.intro_banner {
     color: #812D7B;
     position: absolute;
-    left: 850px;
-    top: 400px;
+    left: 600px;
+    top: 680px;
     text-decoration: none;
     font-size: 16px;
     z-index: 999;
